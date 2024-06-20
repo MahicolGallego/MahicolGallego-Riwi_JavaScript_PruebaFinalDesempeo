@@ -1,0 +1,82 @@
+{
+  "flights": [
+    {
+      "id": "6b0f",
+      "number": "200",
+      "origin": "jfk",
+      "destination": "new york",
+      "departure": "2024-06-07T21:31",
+      "arrival": "2024-06-07T03:21",
+      "capacity": "4"
+    },
+    {
+      "id": "ab03",
+      "number": "128",
+      "origin": "adf",
+      "destination": "londres",
+      "departure": "2024-05-07T21:31",
+      "arrival": "2024-05-07T03:21",
+      "capacity": "100"
+    }
+  ],
+  "users": [
+    {
+      "id": "1",
+      "name": "nicolas",
+      "birthdate": "1999-01-01",
+      "email": "nicolas@gmail.com",
+      "password": "nico12345",
+      "roleId": "1"
+    },
+    {
+      "id": "a529",
+      "name": "mahicol",
+      "birthdate": "2024-06-05",
+      "email": "maicol@gmail.com",
+      "password": "12345",
+      "roleId": "2"
+    }
+  ],
+  "roles": [
+    {
+      "id": "1",
+      "name": "administrator"
+    },
+    {
+      "id": "2",
+      "name": "visitor"
+    }
+  ],
+  "bookings": [
+    {
+      "id": "1",
+      "flightId": "6b0f",
+      "userId": "a529",
+      "bookingdate": "1999-01-01"
+    },
+    {
+      "id": "9d32",
+      "flightId": "6b0f",
+      "userId": "a529",
+      "bookingdate": "2024-06-07"
+    },
+    {
+      "id": "43s2",
+      "flightId": "6b0f",
+      "userId": "1",
+      "bookingdate": "2024-06-07"
+    },
+    {
+      "id": "15d5",
+      "flightId": "6b0f",
+      "userId": "a529",
+      "bookingdate": "2024-06-17"
+    },
+    {
+      "id": "122f",
+      "flightId": "ab03",
+      "userId": "a529",
+      "bookingdate": "2024-06-17"
+    }
+  ]
+}

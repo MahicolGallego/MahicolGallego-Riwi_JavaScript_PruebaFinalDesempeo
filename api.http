@@ -1,0 +1,49 @@
+# # Get all users
+# GET http://localhost:3000/users
+
+# # Get a specific user
+# GET http://localhost:3000/users/2
+
+# # Create a new user
+# POST http://localhost:3000/users
+# Content-Type: application/json
+
+# {
+#   "name": "John Doe ultimo agregado",
+#   "email": "johndoe@example.com",
+#   "roleId" : 1
+# }
+
+# # Update a user
+# PUT http://localhost:3000/users/3
+# Content-Type: application/json
+
+# {
+#   "name": "John Doe updated",
+#   "email": "nuevoemail@gmail.com",
+#     "roleId" : 20
+# }
+
+# # Delete a user
+# DELETE http://localhost:3000/users/3
+
+# ### User Challenges
+
+GET http://localhost:3000/users/a529?_embed=bookings
+
+
+###
+# Get user bookings (que me traiga agragado el usuario)
+GET http://localhost:3000/bookings?userId=a529&_embed=user
+
+###
+
+# Get user bookings (las bookings del usuario, pero sin anexarlo)
+GET http://localhost:3000/bookings?userId=a529&_embed=flight
+
+# ### Recuerda aunque la Referencia Principal de la relacion en si, 
+# users en este caso, este en plural, la consulta debe implementarse
+# en singular "user"
+
+### RECUERDA QUE LOS CAMPOS FK DEBEN IR CON CAMELCASE EN Id
+
