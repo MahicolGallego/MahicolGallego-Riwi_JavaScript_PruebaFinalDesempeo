@@ -48,7 +48,7 @@ export function CreateFlightsPage() {
       const registerFlight = await fetch("http://localhost:3000/flights", {
         method: "POST",
         headers: {
-          "Content-Type": "application/jsons",
+          "Content-Type": "application/json",
         },
         body: JSON.stringify({
           number: $flightNumber,

@@ -43,7 +43,7 @@ export function RegisterPage() {
     const registerUser = await fetch("http://localhost:3000/users", {
       method: "POST",
       headers: {
-        "Content-Type": "application/jsons",
+        "Content-Type": "application/json",
       },
       body: JSON.stringify({
         name: $userName,
